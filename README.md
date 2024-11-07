@@ -9,7 +9,7 @@ Here, we examine the initial rows and overall structure of the dataset using df.
 In this stage, we leverage the power of matplotlib.pyplot and seaborn to visually represent the data. We create a histogram using sns.histplot to visualize the distribution of spending on 'Fresh' products, aiding in understanding the pattern of this specific feature. Additionally, we construct a heatmap using sns.heatmap to illustrate the correlation between numerical columns in the dataset, revealing relationships and potential dependencies between variables.
 
 # 4. Data Handling
- In this step, we prepare the data for model training. We utilize scikit-learn's StandardScaler to standardize the numerical features, ensuring they have zero mean and unit variance. This step helps prevent features with larger values from dominating the model and improves its performance.
+This code performs a forward fill operation to handle missing values. It replaces missing values (NaN) in each column with the previous valid value in that column.
 
 # 5. Data Split
 In this crucial step, we divide the dataset into training and testing subsets. We utilize train_test_split from scikit-learn to randomly split the data, typically with a 70-30 or 80-20 ratio. This division allows us to train the model on a portion of the data and evaluate its performance on unseen data, ensuring its ability to generalize to new instances.
